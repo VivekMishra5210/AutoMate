@@ -1,0 +1,37 @@
+# ===============================
+# AutoMate Ignore File
+# Prevents secrets and large files from hitting GitHub
+# ===============================
+
+# 1. Firebase Credentials (CRITICAL - DO NOT UPLOAD)
+firebase-credentials.json
+*firebase*.json
+google-services.json
+
+# 2. Environment Variables & Secrets (CRITICAL)
+.env
+.env.local
+.env.*
+
+# 3. Database Files (Don't upload users' local testing data)
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+*.db
+
+# 4. Python Virtual Environments & Cache
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+
+# 5. Android Build Outputs & Local Keys
+android_app/AutoMateApp/build/
+android_app/AutoMateApp/app/build/
+android_app/AutoMateApp/.gradle/
+android_app/AutoMateApp/local.properties
+android_app/AutoMateApp/.idea/
+*.keystore
+*.jks

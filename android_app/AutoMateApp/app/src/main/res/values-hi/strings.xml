@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">AutoMate</string>
+    <string name="app_tagline">IIIT नागपुर कैंपस परिवहन</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">वापसी पर स्वागत है</string>
+    <string name="login_subtitle">जारी रखने के लिए साइन इन करें</string>
+    <string name="hint_email">ईमेल पता</string>
+    <string name="hint_password">पासवर्ड</string>
+    <string name="btn_login">साइन इन</string>
+    <string name="btn_register">खाता बनाएं</string>
+    <string name="role_student">छात्र</string>
+    <string name="role_driver">ड्राइवर</string>
+    <string name="role_admin">एडमिन</string>
+    <string name="error_email_required">ईमेल आवश्यक है</string>
+    <string name="error_password_required">पासवर्ड आवश्यक है</string>
+    <string name="error_invalid_email">कृपया सही ईमेल दर्ज करें</string>
+
+    <!-- Student Dashboard -->
+    <string name="student_welcome">नमस्ते, %1$s</string>
+    <string name="btn_join_queue">कतार में शामिल हों</string>
+    <string name="btn_view_status">समय सारणी</string>
+    <string name="btn_file_complaint">शिकायत दर्ज करें</string>
+    <string name="btn_logout">लॉग आउट</string>
+    <string name="queue_empty">आप किसी कतार में नहीं हैं</string>
+
+    <!-- Queue Screen -->
+    <string name="queue_title">परिवहन कतार</string>
+    <string name="direction_college_to_main">कॉलेज → मुख्य सड़क</string>
+    <string name="direction_main_to_college">मुख्य सड़क → कॉलेज</string>
+    <string name="queue_position">आपकी स्थिति</string>
+    <string name="estimated_wait">अनुमानित प्रतीक्षा</string>
+    <string name="current_slot">वर्तमान स्लॉट</string>
+    <string name="btn_leave_queue">कतार छोड़ें</string>
+    <string name="btn_join">कतार में शामिल हों</string>
+
+    <!-- Driver Dashboard -->
+    <string name="driver_welcome">ड्राइवर डैशबोर्ड</string>
+    <string name="current_passengers">वर्तमान यात्री</string>
+    <string name="btn_start_trip">यात्रा शुरू करें</string>
+    <string name="btn_mark_present">✓ उपस्थित</string>
+    <string name="btn_mark_absent">✗ अनुपस्थित</string>
+    <string name="no_passengers">कतार में कोई यात्री नहीं</string>
+    <string name="passengers_waiting">%1$d छात्र प्रतीक्षा में</string>
+
+    <!-- Complaint Screen -->
+    <string name="complaint_title">शिकायत दर्ज करें</string>
+    <string name="hint_complaint_message">अपनी शिकायत का वर्णन करें (कम से कम 10 अक्षर)</string>
+    <string name="btn_submit_complaint">शिकायत भेजें</string>
+    <string name="complaint_submitted">शिकायत सफलतापूर्वक दर्ज हुई</string>
+    <string name="complaint_type_driver_absent">ड्राइवर अनुपस्थित</string>
+    <string name="complaint_type_auto_not_arrived">ऑटो नहीं आया</string>
+    <string name="complaint_type_misbehavior">दुर्व्यवहार</string>
+    <string name="complaint_type_other">अन्य</string>
+
+    <!-- Admin Dashboard -->
+    <string name="admin_title">एडमिन डैशबोर्ड</string>
+    <string name="stats_title">कतार आंकड़े</string>
+    <string name="complaints_title">शिकायतें</string>
+    <string name="total_waiting">कुल प्रतीक्षारत</string>
+    <string name="trips_today">आज की यात्राएं</string>
+    <string name="passengers_today">आज के यात्री</string>
+
+    <!-- General -->
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="error_network">नेटवर्क त्रुटि। कृपया पुनः प्रयास करें।</string>
+    <string name="error_server">सर्वर त्रुटि। कृपया बाद में प्रयास करें।</string>
+    <string name="service_hours">सेवा समय: सुबह 6 बजे – रात 11 बजे</string>
+    <string name="schedule_title">आज की समय सारणी</string>
+    <string name="schedule_subtitle">आज की परिवहन समय सारणी देखें</string>
+    <string name="select_direction">दिशा चुनें</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_language">भाषा</string>
+    <string name="settings_dark_mode">डार्क मोड</string>
+    <string name="settings_language_english">अंग्रेज़ी</string>
+    <string name="settings_language_hindi">हिंदी</string>
+    <string name="settings_language_marathi">मराठी</string>
+
+    <!-- Notification Channel -->
+    <string name="channel_name">AutoMate सूचनाएं</string>
+    <string name="channel_description">परिवहन कतार अपडेट और अलर्ट</string>
+</resources>

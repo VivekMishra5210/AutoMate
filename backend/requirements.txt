@@ -1,0 +1,8 @@
+# AutoMate Backend Dependencies
+Flask==3.1.0
+Flask-CORS==5.0.1
+Flask-JWT-Extended==4.7.1
+bcrypt==4.3.0
+firebase-admin==6.6.0
+gunicorn==23.0.0
+python-dotenv==1.0.1

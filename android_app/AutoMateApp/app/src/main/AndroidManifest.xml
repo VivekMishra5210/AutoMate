@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoMate"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Login Activity (Launcher) -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AutoMate.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Student Dashboard -->
+        <activity
+            android:name=".activities.StudentDashboardActivity"
+            android:exported="false"
+            android:label="Student Dashboard" />
+
+        <!-- Driver Dashboard -->
+        <activity
+            android:name=".activities.DriverDashboardActivity"
+            android:exported="false"
+            android:label="Driver Dashboard" />
+
+        <!-- Queue Screen -->
+        <activity
+            android:name=".activities.QueueActivity"
+            android:exported="false"
+            android:label="Transport Queue" />
+
+        <!-- Complaint Screen -->
+        <activity
+            android:name=".activities.ComplaintActivity"
+            android:exported="false"
+            android:label="File Complaint" />
+
+        <!-- Schedule Screen -->
+        <activity
+            android:name=".activities.ScheduleActivity"
+            android:exported="false"
+            android:label="Today's Schedule" />
+
+        <!-- Admin Dashboard -->
+        <activity
+            android:name=".activities.AdminDashboardActivity"
+            android:exported="false"
+            android:label="Admin Dashboard" />
+
+        <!-- Settings Screen -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false"
+            android:label="Settings" />
+
+        <!-- Register Screen -->
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false"
+            android:label="Create Account" />
+
+        <!-- Firebase Messaging Service -->
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- FCM default notification channel -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="automate_channel" />
+
+        <!-- Disable Firebase auto-init to prevent crashes -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="primary">#1E88E5</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="primary_light">#42A5F5</color>
+    <color name="accent">#FF6D00</color>
+    <color name="accent_light">#FF9100</color>
+
+    <!-- Dark Mode Background Colors -->
+    <color name="bg_dark">#0F1923</color>
+    <color name="bg_card">#1A2732</color>
+    <color name="bg_card_elevated">#243442</color>
+    <color name="bg_input">#1E2D3D</color>
+    <color name="bg_gradient_center">#0D2137</color>
+    <color name="bg_gradient_end">#0A1628</color>
+
+    <!-- Dark Mode Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0BEC5</color>
+    <color name="text_hint">#607D8B</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="success_light">#66BB6A</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+    <color name="info">#29B6F6</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#1E88E5</color>
+    <color name="gradient_end">#0D47A1</color>
+    <color name="gradient_accent_start">#FF6D00</color>
+    <color name="gradient_accent_end">#E65100</color>
+
+    <!-- Direction Colors -->
+    <color name="college_to_main">#26A69A</color>
+    <color name="main_to_college">#AB47BC</color>
+
+    <!-- Misc -->
+    <color name="divider">#37474F</color>
+    <color name="ripple">#33FFFFFF</color>
+    <color name="overlay">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Schedule Slot Colors -->
+    <color name="slot_passed">#F44336</color>
+    <color name="slot_active">#4CAF50</color>
+    <color name="slot_upcoming">#607D8B</color>
+    <color name="slot_passed_bg">#1AF44336</color>
+    <color name="slot_active_bg">#1A4CAF50</color>
+    <color name="slot_upcoming_bg">#1A607D8B</color>
+</resources>

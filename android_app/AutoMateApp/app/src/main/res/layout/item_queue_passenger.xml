@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_passenger_item"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_md"
+    android:layout_marginBottom="@dimen/spacing_sm"
+    android:gravity="center_vertical">
+
+    <!-- Position Number -->
+    <TextView
+        android:id="@+id/tvPosition"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_position_circle"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_body"
+        android:textStyle="bold" />
+
+    <!-- Student Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/spacing_md"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStudentEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@iiitn.ac.in"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPresent"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="✓"
+        android:textSize="16sp"
+        android:layout_marginEnd="@dimen/spacing_xs"
+        android:minWidth="44dp"
+        android:paddingHorizontal="8dp"
+        app:backgroundTint="@color/success" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAbsent"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="✗"
+        android:textSize="16sp"
+        android:minWidth="44dp"
+        android:paddingHorizontal="8dp"
+        app:backgroundTint="@color/error" />
+</LinearLayout>
