@@ -211,7 +211,7 @@ def api_start_trip():
         try:
             last_time = datetime.strptime(last_trip['started_at'], '%Y-%m-%d %H:%M:%S')
             cooldown_end = last_time + timedelta(minutes=15)
-            now = datetime.now()
+            now = datetime.utcnow() + timedelta(hours=5, minutes=30)
             if now < cooldown_end:
                 remaining = int((cooldown_end - now).total_seconds())
                 mins = remaining // 60
@@ -280,10 +280,10 @@ def api_full_queue():
 @jwt_required()
 def api_schedule():
     """Get today's transport schedule with slot statuses."""
-    from datetime import datetime
+    from datetime import datetime, timedelta
     from config import Config
 
-    now = datetime.now()
+    now = datetime.utcnow() + timedelta(hours=5, minutes=30)
     current_total_minutes = now.hour * 60 + now.minute
 
     slots = []
