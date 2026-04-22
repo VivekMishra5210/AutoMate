@@ -30,6 +30,6 @@ class Config:
     # Queue Settings
     PASSENGERS_PER_TRIP = 4
     TIME_SLOT_MINUTES = 20
-    OPERATING_START_HOUR = 6    # 6 AM
-    OPERATING_END_HOUR = 23     # 11 PM
+    OPERATING_START_HOUR = 0    # 12 AM
+    OPERATING_END_HOUR = 24     # 12 AM next day (24/7)
     MAX_ABSENCES = 2            # removed after 2 absences
