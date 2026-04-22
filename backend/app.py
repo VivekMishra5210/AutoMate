@@ -82,8 +82,9 @@ def create_app():
         }), 200
 
     # Initialize database
+    from seed import seed
     with app.app_context():
-        init_db()
+        seed()
 
     return app
 
