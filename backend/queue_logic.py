@@ -8,7 +8,9 @@ from database import query_db, execute_db
 
 def get_current_time_slot():
     """Get the current or next available 20-minute time slot."""
-    now = datetime.now()
+    # Render servers run in UTC time. 
+    # Add +5:30 to strictly enforce Indian Standard Time (IST)
+    now = datetime.utcnow() + timedelta(hours=5, minutes=30)
     hour = now.hour
     minute = now.minute
 
