@@ -198,7 +198,7 @@ def api_start_trip():
     if direction not in ('college_to_main', 'main_to_college'):
         return jsonify({'error': 'Invalid direction'}), 400
 
-    # 15-minute cooldown check — applies to BOTH directions
+    # 9-minute cooldown check — applies to BOTH directions
     last_trip = query_db(
         """SELECT started_at FROM trips
            WHERE driver_id = ?
@@ -210,7 +210,7 @@ def api_start_trip():
         from datetime import datetime, timedelta
         try:
             last_time = datetime.strptime(last_trip['started_at'], '%Y-%m-%d %H:%M:%S')
-            cooldown_end = last_time + timedelta(minutes=15)
+            cooldown_end = last_time + timedelta(minutes=9)
             now = datetime.utcnow() + timedelta(hours=5, minutes=30)
             if now < cooldown_end:
                 remaining = int((cooldown_end - now).total_seconds())
